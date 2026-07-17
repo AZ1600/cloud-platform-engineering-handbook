@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Engineering Handbook">
+  <rect width="48" height="48" rx="12" fill="#0f766e"/>
+  <path d="M13 14.5c0-1.4 1.1-2.5 2.5-2.5H24v25h-8.5A2.5 2.5 0 0 1 13 34.5v-20Z" fill="#fff" opacity=".96"/>
+  <path d="M35 14.5c0-1.4-1.1-2.5-2.5-2.5H24v25h8.5a2.5 2.5 0 0 0 2.5-2.5v-20Z" fill="#ccfbf1"/>
+  <path d="M17 18h4M17 23h4M27 18h4M27 23h4" stroke="#0f766e" stroke-width="2" stroke-linecap="round"/>
+</svg>
