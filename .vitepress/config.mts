@@ -107,6 +107,22 @@ export default defineConfig({
         ],
       },
       {
+        text: "Cloud Infrastructure Deep Dives",
+        collapsed: false,
+        items: [
+          { text: "Start: AWS & Azure", link: "/cloud-labs/" },
+          { text: "01. AWS VPC to EKS", link: "/cloud-labs/01-aws-vpc-eks-path" },
+          { text: "02. Terraform state & plans", link: "/cloud-labs/02-terraform-plan-state" },
+          { text: "03. AWS identity boundaries", link: "/cloud-labs/03-aws-identity-boundaries" },
+          { text: "04. Azure Private Link", link: "/cloud-labs/04-azure-private-link-dns" },
+          { text: "05. Bicep & RBAC", link: "/cloud-labs/05-bicep-whatif-rbac" },
+          { text: "06. PropertyOps deployment", link: "/cloud-labs/06-propertyops-deployment" },
+          { text: "07. Cloud troubleshooting", link: "/cloud-labs/07-cross-cloud-troubleshooting" },
+          { text: "08. Cost & lifecycle", link: "/cloud-labs/08-cost-and-lifecycle" },
+          { text: "09. Interview exercises", link: "/cloud-labs/09-interview-exercises" },
+        ],
+      },
+      {
         text: "Project Case Studies",
         collapsed: true,
         items: projects,

@@ -62,7 +62,7 @@ Important objects:
 - GitHub Actions needs permission to push images to ECR.
 - Lambda functions need execution roles for DynamoDB, SQS, EventBridge and Secrets Manager.
 - Bedrock invocation requires model-access permissions.
-- The Pharmacy EKS manifest currently mounts static AWS credentials; this should become EKS Pod Identity or IAM Roles for Service Accounts.
+- The Pharmacy API EKS repository now documents workload AWS permissions through EKS Pod Identity, with a service-account-based workload and supporting IAM trust/policy files. This repository configuration does not itself prove a currently running association; see the [AWS identity deep dive](../cloud-labs/03-aws-identity-boundaries.md).
 
 Least privilege means granting the smallest actions and resources required. It also means separating deployment permission from runtime permission.
 
@@ -289,3 +289,8 @@ Cost control uses budgets, tags, right-sizing, retention policies, cleanup and a
 - [Cloud-Native Pharmacy](../projects/Cloud-Native-Pharmacy-Platform.md)
 - [Content Automation](../projects/AI-Content-Automation-Platform.md)
 - [Terraform EKS](../projects/Terraform-AWS-EKS-Platform.md)
+
+<!-- phase3-aws-azure-depth -->
+## New source-verified cloud infrastructure labs (October 2026)
+
+The [AWS & Azure field guide](../cloud-labs/index.md) adds current, code-linked material on [private EKS architecture](../cloud-labs/01-aws-vpc-eks-path.md), [GitHub OIDC / Pod Identity / Cognito](../cloud-labs/03-aws-identity-boundaries.md), and [cloud troubleshooting](../cloud-labs/07-cross-cloud-troubleshooting.md). Older observations in this chapter are historical unless reconfirmed against the linked source.
