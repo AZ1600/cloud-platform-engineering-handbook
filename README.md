@@ -60,3 +60,8 @@ The [Phase 2 field guide](labs/index.md) extends Chapters 4 and 6 with practical
 ## AWS and Azure Infrastructure — Phase 3 field guide
 
 Continue with the [AWS/Azure hands-on labs](cloud-labs/index.md), covering VPC-to-EKS flow, Terraform state and guardrails, AWS identity boundaries, Azure Private Link, Bicep What-If, PropertyOps deployment topology, incident troubleshooting and cost-aware lifecycle controls. The lessons are grounded in source reviewed **11 October 2026**; live deployment health is not assumed.
+
+<!-- phase4-cicd-gitops-devsecops -->
+## CI/CD, GitOps and DevSecOps — practical delivery field guide
+
+The [Phase 4 delivery labs](delivery-labs/index.md) connect real GitHub Actions, ECR publication, OIDC, container hardening, SBOM and attestation evidence, Argo CD reconciliation, Terraform CI and EKS release verification. The labs distinguish implemented workflows from proposed integrations, and avoid cloud writes by default.
