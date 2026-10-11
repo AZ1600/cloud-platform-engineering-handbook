@@ -64,3 +64,8 @@ Follow the new [Kubernetes and Platform Engineering field guide](/labs/) to inve
 ## New: AWS and Azure infrastructure deep dives
 
 The [Phase 3 field guide](/cloud-labs/) develops cloud engineering workflows through Terraform EKS, Pharmacy API, AZ-104 and PropertyOps. Follow read-only diagnostics, identity and networking boundaries, configuration review and interview scenarios.
+
+<!-- phase4-cicd-gitops-devsecops -->
+## New: CI/CD, GitOps and DevSecOps deep dives
+
+Explore the [Phase 4 delivery field guide](/delivery-labs/) for source-linked security gates, AWS OIDC, SBOM and provenance, local Argo CD reconciliation, immutable EKS deployment, incident runbooks and technical review exercises.

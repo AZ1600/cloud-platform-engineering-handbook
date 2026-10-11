@@ -167,3 +167,13 @@ Read the first meaningful error and identify which boundary failed before rerunn
 - [CI/CD Project](../projects/CI-CD-Pipeline.md)
 - [GitOps Project](../projects/GitOps-ArgoCD.md)
 - [Command Reference](../13-Command-Reference/Chapter-13-Commands.md)
+
+<!-- phase4-cicd-gitops-devsecops -->
+## October 2026 source-review update
+
+The [Phase 4 delivery field guide](../delivery-labs/index.md) extends this chapter with source-linked labs. Two clarifications matter:
+
+1. The [CI/CD pipeline](https://github.com/AZ1600/platform-engineering-cicd-pipeline) has a manually triggered ECR publishing workflow using GitHub OIDC, CycloneDX SBOM generation and GitHub attestations; publication is not equivalent to deployment.
+2. The [Argo CD GitOps demo](https://github.com/AZ1600/platform-engineering-gitops-argocd) is documented on a local Docker Desktop Kubernetes cluster, **not** as a verified active EKS deployment. It validates YAML and Argo resources in CI and uses an Argo CD Application/AppProject for reconciliation.
+
+The [Pharmacy EKS deployment workflow](https://github.com/AZ1600/pharmacy-api-eks/blob/main/.github/workflows/deploy.yml) demonstrates a separate, manually confirmed AWS deployment flow using an immutable image digest, Kubernetes rollout checks and an application health probe. Always separate source evidence from current deployment state.
