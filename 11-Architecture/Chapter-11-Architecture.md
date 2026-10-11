@@ -22,10 +22,10 @@ Do not begin with “I want to use Kubernetes.” Begin with the workload and co
 
 ```text
 React -> FastAPI -> Kubernetes Python Client -> Kubernetes API
-                   -> Prometheus HTTP API (documented current direction)
+                   -> Prometheus HTTP API (implemented metrics integration)
 ```
 
-Strengths: clear frontend/backend boundary and structured Kubernetes API access. Current risks: unauthenticated backend, local kubeconfig, mixed namespace scope, polling load and limited rule analysis.
+Strengths: clear frontend/backend boundary and structured Kubernetes API access. Current risks: local/development kubeconfig usage, mixed namespace scope, polling load, static bearer-token lifecycle and limited rule analysis. The backend now includes role-scoped bearer-token protection; production identity and Kubernetes RBAC remain separate design concerns.
 
 ## 4. EKS Pharmacy Architecture
 
@@ -131,6 +131,10 @@ Record context, decision, alternatives, consequences and status. Example decisio
 ## 15. Interview Explanation Formula
 
 > The problem was __. The main requirements were __. I separated the system into __ because __. A request flows __. The main security boundary is __. The biggest failure risk is __ and I detect/recover using __. I chose __ over __ because __. In the next version I would __.
+
+## Phase 7 — Architecture and system design field guide
+
+Follow the [Architecture & System Design Deep Dives](../architecture-labs/index.md) for requirements-first system design, trust boundaries, failure domains, idempotency, cloud and identity trade-offs, multi-tenant SaaS, internal developer platform design, AI control planes and ADR-based review. Implemented repository artifacts and proposed integrations are clearly distinguished.
 
 ## Related Material
 
