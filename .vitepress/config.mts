@@ -141,6 +141,23 @@ export default defineConfig({
         ],
       },
       {
+        text: "Observability & SRE Deep Dives",
+        collapsed: true,
+        items: [
+          { text: "Start here", link: "/sre-labs/" },
+          { text: "01. Telemetry architecture", link: "/sre-labs/01-telemetry-architecture" },
+          { text: "02. Prometheus and RED", link: "/sre-labs/02-prometheus-red" },
+          { text: "03. Traces and logs", link: "/sre-labs/03-traces-and-logs" },
+          { text: "04. Grafana investigations", link: "/sre-labs/04-grafana-investigation" },
+          { text: "05. SLOs and error budgets", link: "/sre-labs/05-slo-error-budgets" },
+          { text: "06. Alerts and rule tests", link: "/sre-labs/06-alerts-and-rule-tests" },
+          { text: "07. Incident triage", link: "/sre-labs/07-incident-triage" },
+          { text: "08. PlatformPilot metrics", link: "/sre-labs/08-platformpilot-diagnostics" },
+          { text: "09. CloudOps evidence", link: "/sre-labs/09-cloudops-operational-evidence" },
+          { text: "10. Capstone and postmortem", link: "/sre-labs/10-capstone-postmortem" },
+        ],
+      },
+      {
         text: "Project Case Studies",
         collapsed: true,
         items: projects,
