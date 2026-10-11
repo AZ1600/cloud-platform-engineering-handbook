@@ -84,6 +84,7 @@ export default defineConfig({
           { text: "Handbook Home", link: "/" },
           { text: "Platform Evolution Roadmap", link: "/WEEKEND-PLATFORM-EVOLUTION-ROADMAP" },
           { text: "How to Use the Handbook", link: "/README" },
+          { text: "Quality & Security Review", link: "/quality/" },
           { text: "Deploy on Vercel", link: "/DEPLOYMENT" },
           { text: "Debugging and Issue Register", link: "/DEBUGGING-ISSUE-REGISTER" },
           { text: "Technology-to-Project Map", link: "/TECHNOLOGY-PROJECT-MAP" },

@@ -3,8 +3,9 @@
 > A dated inventory of the projects represented by this handbook and the evidence used to describe them.
 
 **GitHub account audited:** `AZ1600`  
-**Last repository inventory:** 2026-07-17  
-**Owned repositories found:** 15
+**Original inventory snapshot:** 2026-07-17 (historical, not a current live account audit)
+
+**Repositories counted in that snapshot:** 15 (not necessarily the current total)
 
 ## Why This Register Exists
 

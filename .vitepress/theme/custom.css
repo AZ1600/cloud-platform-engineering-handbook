@@ -66,3 +66,18 @@
     overflow-x: auto;
   }
 }
+
+/* phase9-accessibility: visible keyboard navigation and motion preference */
+.VPFeature:focus-within {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPFeature {
+    transition: none;
+  }
+  .VPFeature:hover {
+    transform: none;
+  }
+}

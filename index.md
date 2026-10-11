@@ -89,3 +89,8 @@ Use the [Phase 7 architecture field guide](/architecture-labs/) to move from req
 ## New: technical interviews and evidence deep dives
 
 Use the [Phase 8 interview practice guide](/interview-labs/) to rehearse Kubernetes incident investigations, cloud architecture, secure delivery, AI system design, technical trade-offs and source-backed STAR stories. Review the engineering-evidence checklist before describing project results.
+
+<!-- phase9-quality-security -->
+## Quality, security and release readiness
+
+Before publishing updates, use the [handbook quality review](/quality/) to verify local links and sidebar routes, review dependency advisories, check accessibility and distinguish source inspection from deployed system evidence.

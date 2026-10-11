@@ -85,3 +85,8 @@ The [Phase 7 architecture labs](architecture-labs/index.md) extend Chapter 11 wi
 ## Technical interviews and evidence — Phase 8 field guide
 
 The [Phase 8 interview and evidence labs](interview-labs/index.md) turn earlier cloud, platform, security, SRE and AI case studies into source-backed interview scenarios, STAR-story research prompts, a defensible portfolio checklist and an interview scoring exercise. No personal employment claims, production metrics or recent CI success are inferred from source code alone.
+
+<!-- phase9-quality-security -->
+## Quality and security review — Phase 9
+
+The [Phase 9 quality and security review](quality/index.md) documents reproducible internal-link and build checks, dependency advisory triage, accessibility and performance checks, source-freshness issues and a release checklist. These are review controls—not claims of zero vulnerabilities or certified accessibility.
