@@ -161,3 +161,8 @@ Platforms concentrate privilege. Protect:
 - [PlatformPilot](../projects/PlatformPilot.md)
 - [CloudOps](../projects/CloudOps-Command-Center.md)
 - [GitOps](../projects/GitOps-ArgoCD.md)
+
+<!-- phase2-kubernetes-platform-start -->
+## Phase 2 — Platform code reviews
+
+Use the [hands-on platform series](/labs/) for evidence-linked design reviews of [PlatformPilot API authorization](/labs/04-platformpilot-api), [Backstage golden paths](/labs/05-backstage-golden-paths) and [CloudOps human approval](/labs/06-cloudops-approval). Finish with the [integrated scenario](/labs/07-integrated-scenario) and [exercises](/labs/08-review-exercises).

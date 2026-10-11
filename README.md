@@ -50,3 +50,8 @@ npm run docs:build
 ```
 
 The documentation site uses VitePress. Avoid treating this educational reference as production operational guidance without verifying current provider documentation, security requirements and deployment context.
+
+<!-- phase2-kubernetes-platform-start -->
+## Kubernetes and Platform Engineering — hands-on deep dives
+
+The [Phase 2 field guide](labs/index.md) extends Chapters 4 and 6 with practical investigation steps, role and identity boundaries, real repository code reviews and review exercises. It uses PlatformPilot, the Backstage developer portal, CloudOps and related workload manifests as evidence. Source references were inspected on **11 October 2026**; live deployment and CI status are not implied.
