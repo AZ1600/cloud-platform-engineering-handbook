@@ -133,6 +133,10 @@ Prepare these evidence-based stories:
 - [ ] I can state limitations confidently and propose priorities.
 - [ ] I can answer behavioural questions with truthful evidence.
 
+## Phase 8 — Interview and evidence practice
+
+Work through the [Interview & Evidence Deep Dives](../interview-labs/index.md) to practise scenario-led AWS/Azure, Kubernetes, GitOps, SRE, security and AI system design interviews. The guide includes source-linked STAR-story outlines, evidence classification, a portfolio review checklist and a 45-minute mock interview with a structured scoring rubric. A test file is not the same as a passing CI run, and a portfolio project is not automatically production experience.
+
 ## Related Material
 
 - [Architecture](../11-Architecture/Chapter-11-Architecture.md)

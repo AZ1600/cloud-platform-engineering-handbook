@@ -1,0 +1,50 @@
+[
+  {
+    "id": "opspilot-tenant-test",
+    "claim": "OpsPilot has a PostgreSQL tenant-isolation integration test file.",
+    "source": "https://github.com/AZ1600/opspilot-saas/blob/main/tests/integration/tenant-isolation.postgres.ts",
+    "evidence": "test-defined",
+    "review": "supported",
+    "scope": "Test code exists; fresh execution was not observed"
+  },
+  {
+    "id": "opspilot-tenant-perfect",
+    "claim": "OpsPilot has been independently verified free of all cross-tenant data leaks.",
+    "source": "https://github.com/AZ1600/opspilot-saas/blob/main/tests/integration/tenant-isolation.postgres.ts",
+    "evidence": "test-defined",
+    "review": "unsupported",
+    "scope": "One test file does not establish exhaustive security guarantees"
+  },
+  {
+    "id": "cloudops-approval-test",
+    "claim": "CloudOps defines a negative-case approval gate test.",
+    "source": "https://github.com/AZ1600/cloudops-command-center/blob/main/tests/approval-gate.test.ts",
+    "evidence": "test-defined",
+    "review": "supported",
+    "scope": "Test source is visible, not a verified current CI result"
+  },
+  {
+    "id": "terraform-apply",
+    "claim": "The Terraform EKS GitHub workflow automatically applies infrastructure on every push.",
+    "source": "https://github.com/AZ1600/platform-engineering-terraform-eks/blob/main/.github/workflows/terraform-plan.yml",
+    "evidence": "implemented-source",
+    "review": "contradicted",
+    "scope": "Current workflow is plan-only"
+  },
+  {
+    "id": "rag-retrieval-tests",
+    "claim": "RAG Ops Assistant defines source-based retrieval evaluation cases.",
+    "source": "https://github.com/AZ1600/rag-ops-assistant/blob/main/evals/retrieval_cases.json",
+    "evidence": "test-defined",
+    "review": "supported",
+    "scope": "Test cases exist; no live model quality claim follows"
+  },
+  {
+    "id": "propertyops-private-vnet",
+    "claim": "The current PropertyOps Container Apps Environment already runs inside the dedicated prepared VNet.",
+    "source": "https://github.com/AZ1600/AI-property-operations/blob/main/README.md",
+    "evidence": "repository-documented",
+    "review": "contradicted",
+    "scope": "README says the existing environment still uses Azure-managed networking"
+  }
+]
