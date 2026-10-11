@@ -74,6 +74,7 @@ export default defineConfig({
       { text: "Architecture", link: "/architecture-labs/" },
       { text: "Projects", link: "/projects/" },
       { text: "Commands", link: "/13-Command-Reference/Chapter-13-Commands" },
+      { text: "Practice", link: "/interview-labs/" },
       { text: "Interview", link: "/12-Interview-Preparation/Chapter-12-Interview-Preparation" },
     ],
     sidebar: [
@@ -193,6 +194,24 @@ export default defineConfig({
           { text: "09. Operational AI controls", link: "/architecture-labs/09-ai-control-plane" },
           { text: "10. ADRs & review gates", link: "/architecture-labs/10-adrs-review" },
           { text: "11. Capstone design review", link: "/architecture-labs/11-capstone-design-review" },
+        ],
+      },
+      {
+        text: "Interview & Evidence Deep Dives",
+        collapsed: true,
+        items: [
+          { text: "Start here", link: "/interview-labs/" },
+          { text: "01. Answer framework", link: "/interview-labs/01-answer-framework" },
+          { text: "02. AWS & Azure scenarios", link: "/interview-labs/02-aws-azure-scenarios" },
+          { text: "03. Kubernetes triage", link: "/interview-labs/03-kubernetes-triage" },
+          { text: "04. Terraform & GitOps", link: "/interview-labs/04-terraform-cicd-gitops" },
+          { text: "05. SRE incident simulation", link: "/interview-labs/05-sre-incident-exercise" },
+          { text: "06. Security & DevSecOps", link: "/interview-labs/06-security-devsecops" },
+          { text: "07. AI/RAG system design", link: "/interview-labs/07-ai-rag-system-design" },
+          { text: "08. Architecture trade-offs", link: "/interview-labs/08-architecture-tradeoffs" },
+          { text: "09. STAR stories", link: "/interview-labs/09-star-stories" },
+          { text: "10. Portfolio evidence audit", link: "/interview-labs/10-evidence-portfolio-audit" },
+          { text: "11. Mock interview & rubric", link: "/interview-labs/11-mock-interview-loop" },
         ],
       },
       {

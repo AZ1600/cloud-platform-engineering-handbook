@@ -84,3 +84,8 @@ Explore the [Phase 6 AI/RAG field guide](/ai-labs/) for evidence-grounded retrie
 ## New: Architecture and system design deep dives
 
 Use the [Phase 7 architecture field guide](/architecture-labs/) to move from requirements and trust-boundary diagrams to data consistency, failure recovery, multi-tenant SaaS, developer platforms, safe AI automation and architecture decision records. Examples cite real source; cross-project integrations are labelled proposed.
+
+<!-- phase8-interviews-evidence -->
+## New: technical interviews and evidence deep dives
+
+Use the [Phase 8 interview practice guide](/interview-labs/) to rehearse Kubernetes incident investigations, cloud architecture, secure delivery, AI system design, technical trade-offs and source-backed STAR stories. Review the engineering-evidence checklist before describing project results.

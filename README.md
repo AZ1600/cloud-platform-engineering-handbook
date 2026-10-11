@@ -80,3 +80,8 @@ The [Phase 6 AI/RAG labs](ai-labs/index.md) connect RAG Ops Assistant, Bedrock, 
 ## Architecture and system design — Phase 7 field guide
 
 The [Phase 7 architecture labs](architecture-labs/index.md) extend Chapter 11 with source-backed requirements, C4-style context/container views, tenant isolation, retries, reliability, IAM and cloud trade-offs, Backstage/GitOps boundaries, AI operational safety, ADRs and a design review capstone. They distinguish implemented code, scoped tests and proposed integrations.
+
+<!-- phase8-interviews-evidence -->
+## Technical interviews and evidence — Phase 8 field guide
+
+The [Phase 8 interview and evidence labs](interview-labs/index.md) turn earlier cloud, platform, security, SRE and AI case studies into source-backed interview scenarios, STAR-story research prompts, a defensible portfolio checklist and an interview scoring exercise. No personal employment claims, production metrics or recent CI success are inferred from source code alone.

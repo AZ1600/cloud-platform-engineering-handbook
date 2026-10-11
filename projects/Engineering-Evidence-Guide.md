@@ -23,6 +23,10 @@ This handbook aims to explain systems with traceable implementation evidence rat
 6. **Limitations:** missing controls, untested paths and version assumptions.
 7. **Learning:** one failure story and next experiment.
 
+## Interview-ready claim review
+
+Before using a portfolio claim in an interview, attach an exact source file or dated run artifact, label its evidence level and write one sentence about what it does **not** establish. Verify personal contribution independently: repository ownership does not prove authorship of every change. For reusable examples and negative claims, see [Phase 8 portfolio evidence practice](../interview-labs/10-evidence-portfolio-audit.md).
+
 ## Security and claims
 
 Do not publish cloud secrets, tokens, access keys, personal records or confidential screenshots. Do not claim audit, security certification, zero downtime, production use or cost savings without verifiable evidence. A screenshot is evidence of a moment, not continuous production health. Recheck all links and deployment prerequisites when refreshing a project.
