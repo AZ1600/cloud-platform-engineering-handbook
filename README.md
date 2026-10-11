@@ -55,3 +55,8 @@ The documentation site uses VitePress. Avoid treating this educational reference
 ## Kubernetes and Platform Engineering — hands-on deep dives
 
 The [Phase 2 field guide](labs/index.md) extends Chapters 4 and 6 with practical investigation steps, role and identity boundaries, real repository code reviews and review exercises. It uses PlatformPilot, the Backstage developer portal, CloudOps and related workload manifests as evidence. Source references were inspected on **11 October 2026**; live deployment and CI status are not implied.
+
+<!-- phase3-aws-azure-depth -->
+## AWS and Azure Infrastructure — Phase 3 field guide
+
+Continue with the [AWS/Azure hands-on labs](cloud-labs/index.md), covering VPC-to-EKS flow, Terraform state and guardrails, AWS identity boundaries, Azure Private Link, Bicep What-If, PropertyOps deployment topology, incident troubleshooting and cost-aware lifecycle controls. The lessons are grounded in source reviewed **11 October 2026**; live deployment health is not assumed.

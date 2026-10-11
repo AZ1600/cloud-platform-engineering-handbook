@@ -78,7 +78,7 @@ State maps Terraform resource addresses to real infrastructure. It can contain r
 
 Losing state can make Terraform unable to manage resources safely. Concurrent state writes can corrupt workflows.
 
-The repository lists remote state in S3 as a future improvement. A team-ready design should use a protected remote backend, encryption, versioning and state locking supported by the chosen backend strategy.
+The current EKS dev backend already declares S3 state, encryption, and native S3 lockfile use, while the backend bucket is provided at initialization. Check the bucket's actual versioning, access and retention configuration separately; see [Terraform state and plans](../cloud-labs/02-terraform-plan-state.md).
 
 Never commit local state or state backups to Git.
 
@@ -270,3 +270,8 @@ Modules package a coherent capability behind inputs/outputs, encouraging consist
 - [AWS Through My Projects](../05-AWS/Chapter-05-AWS.md)
 - [Kubernetes Through My Projects](../04-Kubernetes/Chapter-04-Kubernetes.md)
 - [Project Commands](../13-Command-Reference/Chapter-13-Commands.md)
+
+<!-- phase3-aws-azure-depth -->
+## New: validated EKS state and guardrails (October 2026)
+
+Study [S3 locking, native Terraform tests and plan-only CI](../cloud-labs/02-terraform-plan-state.md), then [VPC-to-EKS network flow](../cloud-labs/01-aws-vpc-eks-path.md). The repository currently declares an S3 remote backend and uses a GitHub OIDC *plan-only* workflow. Review historical statements in this chapter against that newer implementation.

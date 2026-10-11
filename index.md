@@ -59,3 +59,8 @@ The project index has been refreshed against public repository structures and RE
 ## Hands-on Kubernetes & Platform Engineering
 
 Follow the new [Kubernetes and Platform Engineering field guide](/labs/) to investigate workloads, inspect access boundaries and understand how PlatformPilot, Backstage and CloudOps fit together. Includes source-linked security reviews, incident runbooks and a capstone scenario. The existing learning chapters remain available.
+
+<!-- phase3-aws-azure-depth -->
+## New: AWS and Azure infrastructure deep dives
+
+The [Phase 3 field guide](/cloud-labs/) develops cloud engineering workflows through Terraform EKS, Pharmacy API, AZ-104 and PropertyOps. Follow read-only diagnostics, identity and networking boundaries, configuration review and interview scenarios.
