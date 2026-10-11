@@ -11,86 +11,43 @@ hero:
     - theme: alt
       text: Start learning
       link: /01-Cloud-Fundamentals/Chapter-01-Cloud-Computing
-    - theme: alt
-      text: Evidence standards
-      link: /projects/Engineering-Evidence-Guide
 features:
-  - icon: "🧭"
-    title: Four connected flagship systems
-    details: PlatformPilot, CloudOps, OpsPilot SaaS and PropertyOps illustrate different layers of cloud and platform engineering.
-    link: /projects/
-  - icon: "🔐"
-    title: Security by design
-    details: Learn IAM, application RBAC, workload identity, private networking and approval boundaries from project artifacts.
-    link: /projects/Engineering-Evidence-Guide
-  - icon: "⚙️"
-    title: Reproducible infrastructure
-    details: AWS Terraform, Azure Bicep, Kubernetes manifests, delivery pipelines and testing practices.
-    link: /07-Terraform/Chapter-07-Terraform
-  - icon: "📈"
-    title: Build systems you can operate
-    details: Follow metrics, traces, SLOs, evidence handling and incident investigation.
-    link: /09-Observability/Chapter-09-Observability
-  - icon: "🤖"
-    title: Grounded AI operations
-    details: Study retrieval, orchestration, RAG evaluations and human-in-the-loop action workflows.
-    link: /projects/RAG-Ops-Assistant
-  - icon: "📚"
-    title: Learn and explain
-    details: Topic chapters, a command reference and engineering interview preparation.
-    link: /12-Interview-Preparation/Chapter-12-Interview-Preparation
+  - icon: "🔎"
+    title: "PlatformPilot · Kubernetes operations"
+    details: "Operational diagnostics, scoped access and evidence-driven Kubernetes findings."
+    link: /projects/PlatformPilot
+  - icon: "🛡️"
+    title: "CloudOps · Approved remediation"
+    details: "Risk signals, decision traces and human approval before operational changes."
+    link: /projects/CloudOps-Command-Center
+  - icon: "🏢"
+    title: "OpsPilot · Multi-tenant SaaS"
+    details: "Workspace isolation, role-based access and owner-approved action workflows."
+    link: /projects/OpsPilot-SaaS
+  - icon: "☁️"
+    title: "PropertyOps · Azure engineering"
+    details: "Bicep infrastructure, private endpoints, managed identities and maintenance operations."
+    link: /projects/PropertyOps-Azure
 ---
 
-## What changed in this edition
+## Choose your engineering path
 
-The project index has been refreshed against public repository structures and READMEs inspected on **11 October 2026**, including new Azure, AI and infrastructure projects. Previous chapters remain available as learning resources and may contain older dated observations; always inspect linked source for the current implementation.
+**Platform engineering:** [PlatformPilot](/projects/PlatformPilot) → [CloudOps](/projects/CloudOps-Command-Center) → [Backstage](/projects/Backstage-Developer-Portal) → [Observability](/projects/Observability-Platform).
 
-## Choose a learning path
+**AWS and Azure cloud engineering:** [Terraform EKS](/projects/Terraform-AWS-EKS-Platform) → [Pharmacy API](/projects/Pharmacy-API-EKS) → [PropertyOps](/projects/PropertyOps-Azure) → [AZ-104 infrastructure](/projects/AZ104-Azure-Infrastructure).
 
-**Platform engineer:** [PlatformPilot](/projects/PlatformPilot) → [CloudOps Command Center](/projects/CloudOps-Command-Center) → [Backstage](/projects/Backstage-Developer-Portal) → [Observability](/projects/Observability-Platform).
+**AI and secure automation:** [RAG Ops](/projects/RAG-Ops-Assistant) → [CloudOps](/projects/CloudOps-Command-Center) → [OpsPilot](/projects/OpsPilot-SaaS).
 
-**Cloud engineer:** [Terraform EKS](/projects/Terraform-AWS-EKS-Platform) → [Pharmacy EKS](/projects/Pharmacy-API-EKS) → [PropertyOps on Azure](/projects/PropertyOps-Azure) → [AZ-104 Lab](/projects/AZ104-Azure-Infrastructure).
+## Explore the handbook
 
-**AI operations engineer:** [RAG Ops Assistant](/projects/RAG-Ops-Assistant) → [CloudOps](/projects/CloudOps-Command-Center) → [OpsPilot SaaS](/projects/OpsPilot-SaaS).
+- **Build fundamentals:** [14 technical learning chapters](/01-Cloud-Fundamentals/Chapter-01-Cloud-Computing) covering systems, clouds, containers, delivery, reliability and architecture.
+- **Practise the engineering:** [Kubernetes labs](/labs/), [cloud infrastructure labs](/cloud-labs/), [delivery labs](/delivery-labs/), [SRE labs](/sre-labs/), [AI/RAG labs](/ai-labs/) and [architecture exercises](/architecture-labs/).
+- **Prepare to explain decisions:** [Interview scenarios](/interview-labs/), [command reference](/13-Command-Reference/Chapter-13-Commands) and [project case studies](/projects/).
 
-> **Evidence convention:** repository contents demonstrate implemented artifacts, screenshots document specific runs, and live uptime, customer usage, security certification or ongoing cloud deployment are *not* assumed.
+## Evidence before claims
 
-<!-- phase2-kubernetes-platform-start -->
-## Hands-on Kubernetes & Platform Engineering
+Source files show what is implemented; tests and dated runtime artifacts add different kinds of evidence. They do not automatically establish current production health. Read the [engineering evidence standards](/projects/Engineering-Evidence-Guide) before drawing conclusions from any case study.
 
-Follow the new [Kubernetes and Platform Engineering field guide](/labs/) to investigate workloads, inspect access boundaries and understand how PlatformPilot, Backstage and CloudOps fit together. Includes source-linked security reviews, incident runbooks and a capstone scenario. The existing learning chapters remain available.
+## Handbook edition notes
 
-<!-- phase3-aws-azure-depth -->
-## New: AWS and Azure infrastructure deep dives
-
-The [Phase 3 field guide](/cloud-labs/) develops cloud engineering workflows through Terraform EKS, Pharmacy API, AZ-104 and PropertyOps. Follow read-only diagnostics, identity and networking boundaries, configuration review and interview scenarios.
-
-<!-- phase4-cicd-gitops-devsecops -->
-## New: CI/CD, GitOps and DevSecOps deep dives
-
-Explore the [Phase 4 delivery field guide](/delivery-labs/) for source-linked security gates, AWS OIDC, SBOM and provenance, local Argo CD reconciliation, immutable EKS deployment, incident runbooks and technical review exercises.
-
-<!-- phase5-observability-sre -->
-## New: Observability, SRE and incident response deep dives
-
-Follow the [Phase 5 SRE field guide](/sre-labs/) for source-linked Prometheus queries, OpenTelemetry traces, Loki logs, Tempo investigation, error budgets, alert testing, PlatformPilot failure boundaries and approval-gated CloudOps incident workflows. Local demos are not represented as production availability evidence.
-
-<!-- phase6-ai-ops-rag -->
-## New: AI Operations and RAG Engineering deep dives
-
-Explore the [Phase 6 AI/RAG field guide](/ai-labs/) for evidence-grounded retrieval, source citations, LangGraph/MCP routing, Bedrock identity, evaluation, prompt-injection boundaries and approval-safe automation.
-
-<!-- phase7-architecture-system-design -->
-## New: Architecture and system design deep dives
-
-Use the [Phase 7 architecture field guide](/architecture-labs/) to move from requirements and trust-boundary diagrams to data consistency, failure recovery, multi-tenant SaaS, developer platforms, safe AI automation and architecture decision records. Examples cite real source; cross-project integrations are labelled proposed.
-
-<!-- phase8-interviews-evidence -->
-## New: technical interviews and evidence deep dives
-
-Use the [Phase 8 interview practice guide](/interview-labs/) to rehearse Kubernetes incident investigations, cloud architecture, secure delivery, AI system design, technical trade-offs and source-backed STAR stories. Review the engineering-evidence checklist before describing project results.
-
-<!-- phase9-quality-security -->
-## Quality, security and release readiness
-
-Before publishing updates, use the [handbook quality review](/quality/) to verify local links and sidebar routes, review dependency advisories, check accessibility and distinguish source inspection from deployed system evidence.
+This handbook was substantially expanded in 2026. Earlier phase-by-phase homepage updates are preserved in the [handbook edition notes](/HANDBOOK-RELEASE-NOTES); the latest reviewed claims belong in the linked source and evidence registers.
