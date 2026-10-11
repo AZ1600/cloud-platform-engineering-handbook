@@ -1,0 +1,47 @@
+name: Handbook quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  documentation:
+    name: Documentation, build and production-dependency gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install from lockfile
+        run: npm ci
+      - name: Verify internal targets
+        run: python3 scripts/verify_docs.py
+      - name: Build static handbook
+        run: npm run docs:build
+      - name: Production dependency gate
+        run: npm audit --omit=dev --audit-level=high
+      - name: Full dependency audit (informational; report remaining dev risks)
+        if: always()
+        shell: bash
+        run: |
+          audit_status=0
+          npm audit --json > npm-audit-full.json || audit_status=$?
+          echo "Full audit exit code: $audit_status (informational; see artifact)"
+          exit 0
+      - name: Upload full audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-audit-full
+          path: npm-audit-full.json
+          if-no-files-found: warn
+          retention-days: 14

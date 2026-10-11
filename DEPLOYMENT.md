@@ -119,6 +119,10 @@ The Markdown page may exist but still need to be added to the navigation or side
 
 Confirm that the change was committed and pushed to the branch Vercel treats as the production branch. Local, uncommitted files are never sent to Vercel.
 
+## Phase 9 quality gate
+
+Before publishing, run `npm run docs:check` to verify local links and sidebar paths, and review [dependency, accessibility and release checks](quality/index.md). The static build and internal-link scanner do not validate external URLs or certify security. The full development-dependency audit must be reviewed even when the production-dependency gate passes.
+
 ## Deployment checklist
 
 - [ ] `npm ci` completes.
