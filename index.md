@@ -79,3 +79,8 @@ Follow the [Phase 5 SRE field guide](/sre-labs/) for source-linked Prometheus qu
 ## New: AI Operations and RAG Engineering deep dives
 
 Explore the [Phase 6 AI/RAG field guide](/ai-labs/) for evidence-grounded retrieval, source citations, LangGraph/MCP routing, Bedrock identity, evaluation, prompt-injection boundaries and approval-safe automation.
+
+<!-- phase7-architecture-system-design -->
+## New: Architecture and system design deep dives
+
+Use the [Phase 7 architecture field guide](/architecture-labs/) to move from requirements and trust-boundary diagrams to data consistency, failure recovery, multi-tenant SaaS, developer platforms, safe AI automation and architecture decision records. Examples cite real source; cross-project integrations are labelled proposed.

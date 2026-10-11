@@ -75,3 +75,8 @@ The [Phase 5 SRE labs](sre-labs/index.md) expand Chapter 9 with source-backed te
 ## AI Operations and RAG Engineering — Phase 6 field guide
 
 The [Phase 6 AI/RAG labs](ai-labs/index.md) connect RAG Ops Assistant, Bedrock, LangGraph, MCP, PlatformPilot, CloudOps, OpsPilot and résumé-scoring projects. They separate implemented source behavior, mocked API tests, synthetic evaluation fixtures and production-hardening proposals.
+
+<!-- phase7-architecture-system-design -->
+## Architecture and system design — Phase 7 field guide
+
+The [Phase 7 architecture labs](architecture-labs/index.md) extend Chapter 11 with source-backed requirements, C4-style context/container views, tenant isolation, retries, reliability, IAM and cloud trade-offs, Backstage/GitOps boundaries, AI operational safety, ADRs and a design review capstone. They distinguish implemented code, scoped tests and proposed integrations.
