@@ -1,76 +1,45 @@
-# Project Index
+# Project index — October 2026
 
-This index connects the handbook to the engineering projects behind it. It is designed to make the knowledge base useful for learning, interviews, portfolio reviews, and future project work.
+This catalogue links current repositories to architectural themes and implementation evidence. **Last repository structure/README review: 11 October 2026.** The review did not run or deploy every system.
 
-For the dated inventory of all owned repositories, including the handbook and reference material, see the [Project and Work Register](../PROJECT-WORK-REGISTER.md). For commands grouped by project, see [Commands Used Across My Projects](../13-Command-Reference/Chapter-13-Commands.md).
+## Flagship studies
 
-## Project Portfolio
+| Case study | Engineering focus | Starting evidence |
+| --- | --- | --- |
+| [PlatformPilot](PlatformPilot.md) | Kubernetes observability and operational RBAC | [Backend security tests](https://github.com/AZ1600/platform-pilot/tree/main/backend/tests), [architecture](https://github.com/AZ1600/platform-pilot/blob/main/docs/ARCHITECTURE.md) |
+| [CloudOps Command Center](CloudOps-Command-Center.md) | Risk processing, decision evidence and human approval | [Contract](https://github.com/AZ1600/cloudops-command-center/tree/main/contracts), [tests](https://github.com/AZ1600/cloudops-command-center/tree/main/tests) |
+| [OpsPilot SaaS](OpsPilot-SaaS.md) | Multi-tenant product workflows, RBAC and persistence | [Integration tests](https://github.com/AZ1600/opspilot-saas/tree/main/tests/integration), [schema](https://github.com/AZ1600/opspilot-saas/blob/main/database/schema.sql) |
+| [PropertyOps on Azure](PropertyOps-Azure.md) | Secure Azure application infrastructure | [Bicep modules](https://github.com/AZ1600/AI-property-operations/tree/main/infra), [deployment evidence](https://github.com/AZ1600/AI-property-operations/tree/main/docs/screenshots) |
 
-| Project | Purpose | Confirmed technologies | Status in this handbook |
-|---|---|---|---|
-| [PlatformPilot](PlatformPilot.md) | AI-assisted Kubernetes operations dashboard | React 19, FastAPI, Python 3.12, Kubernetes Python Client | Repository verified; detailed study in progress |
-| [CloudOps Command Center](CloudOps-Command-Center.md) | Explainable, approval-gated infrastructure risk remediation | Next.js, React, TypeScript, Vitest, GitHub Actions | Repository verified; detailed study in progress |
-| [Terraform AWS EKS Platform](Terraform-AWS-EKS-Platform.md) | Reproducible Kubernetes platform on AWS | Terraform, AWS, EKS | Repository verified; detailed study in progress |
-| [Pharmacy API on EKS](Pharmacy-API-EKS.md) | Cloud-native pharmacy API deployed to Amazon EKS | FastAPI, Docker, EKS, ECR, DynamoDB, SQS, EventBridge | Repository verified; initial study created |
-| [GitOps with Argo CD](GitOps-ArgoCD.md) | Declarative continuous delivery to Amazon EKS | Argo CD, Kubernetes, GitHub, EKS | Repository verified; initial study created |
-| [Backstage Developer Portal](Backstage-Developer-Portal.md) | Internal developer portal and software catalogue | Backstage, TypeScript, Node.js, Docker, Kubernetes, TechDocs | Repository verified; initial study created |
-| [OpsPilot SaaS](OpsPilot-SaaS.md) | AI-assisted operations SaaS for small service businesses | Next.js, TypeScript, PostgreSQL, Neon, Clerk, Stripe, Vitest | Repository verified; initial study created |
-| [AI Content Automation](AI-Content-Automation-Platform.md) | Serverless multi-account social publishing operations | Lambda, API Gateway, DynamoDB, EventBridge, Secrets Manager, SAM | Repository verified; initial study created |
-| [AI Resume Analyzer](AI-Resume-Analyzer.md) | Automated role-readiness and skill-gap analysis | n8n, AWS Bedrock, Amazon Nova Pro, JavaScript, Docker Compose | Repository verified; initial study created |
-| [Cloud-Native Pharmacy Platform](Cloud-Native-Pharmacy-Platform.md) | Multi-tenant serverless inventory and low-stock workflows | Lambda, API Gateway, DynamoDB, Cognito, SQS, EventBridge, SAM | Repository verified; initial study created |
-| [CI/CD Pipeline](CI-CD-Pipeline.md) | Automated container build and publication to ECR | GitHub Actions, Docker, ECR, IAM | Repository verified; initial study created |
-| [Observability Platform](Observability-Platform.md) | Local metrics collection and dashboard visualisation | Prometheus, Grafana, Docker Compose | Repository verified; initial study created |
-| [Cloud Control Plane](Cloud-Control-Plane.md) | Future platform combining cloud, Kubernetes, observability, automation, and AI assistance | Planned; to be selected | Vision documented |
+## Infrastructure and delivery
 
-## Project-to-Knowledge Map
+| Project | What to learn |
+| --- | --- |
+| [Terraform AWS EKS](Terraform-AWS-EKS-Platform.md) | Modular IaC, Terraform native tests, cloud OIDC plan validation |
+| [Pharmacy API on EKS](Pharmacy-API-EKS.md) | Cognito auth, Pod Identity, DynamoDB and Kubernetes resilience |
+| [AZ-104 Azure Infrastructure](AZ104-Azure-Infrastructure.md) | Bastion, VNet, scoped RBAC, Private Link, Bicep and backup |
+| [Backstage Developer Portal](Backstage-Developer-Portal.md) | Software catalog, developer golden paths and service scaffolding |
+| [GitOps with Argo CD](GitOps-ArgoCD.md) | Declarative delivery and reconciliation in local Kubernetes |
+| [CI/CD Pipeline](CI-CD-Pipeline.md) | Container scanning, SBOMs, ECR and attestations |
+| [Observability Platform](Observability-Platform.md) | Metrics, traces, logs, SLOs and rule tests |
+| [Cloud-Native Pharmacy Platform](Cloud-Native-Pharmacy-Platform.md) | Multi-tenant serverless inventory workflow and integration status |
 
-| Knowledge area | Strongest project evidence |
-|---|---|
-| Kubernetes operations | PlatformPilot, Pharmacy API |
-| AWS application architecture | Pharmacy API, AI Content Automation |
-| Infrastructure as code | Terraform AWS EKS, AI Content Automation with AWS SAM |
-| GitOps and continuous delivery | GitOps with Argo CD |
-| Internal developer platforms | Backstage Developer Portal |
-| Cloud risk and remediation workflows | CloudOps Command Center |
-| Production-style SaaS foundations | OpsPilot SaaS |
-| Serverless and event-driven automation | AI Content Automation |
-| AI-assisted operational workflows | PlatformPilot, CloudOps, OpsPilot |
-| Generative AI workflow automation | AI Resume Analyzer |
-| CI and container publication | Platform Engineering CI/CD Pipeline |
-| Metrics and dashboards | Platform Engineering Observability |
+## AI systems and automation
 
-## Full GitHub Inventory
+| Project | What to learn |
+| --- | --- |
+| [RAG Ops Assistant](RAG-Ops-Assistant.md) | Bedrock, LangGraph, MCP, retrieval evaluation and AWS ECS |
+| [AI Resume Analyzer](AI-Resume-Analyzer.md) | Deterministic scoring, n8n and Bedrock workflow integration |
+| [AI Content Automation](AI-Content-Automation-Platform.md) | Lambda, OAuth, AWS scheduling and human-reviewed publishing |
 
-The authenticated account inventory found 15 owned repositories on 2026-07-11:
+## Reference and plans
 
-- 12 engineering repositories represented in this handbook;
-- this handbook repository itself;
-- `migrationASP.NET`, retained as a reference/migration lab pending confirmation of provenance and personal contribution;
-- `AZ1600.github.io`, intentionally excluded from the handbook project portfolio.
+The [Cloud Control Plane](Cloud-Control-Plane.md) is a **vision/reference page**, not a deployed unified control plane. The separately generated [Backstage inventory API](https://github.com/AZ1600/backstage-generated-inventory-api) is a scaffold demonstration. The [ASP.NET migration utility](https://github.com/AZ1600/migrationASP.NET) is retained as reference material; authorship/provenance is not established here. The portfolio source and this handbook are documentation repositories rather than application case studies.
 
-Repository ownership alone is not enough to call work an original project. The final handbook will distinguish original builds, guided labs, upstream code, experiments, and future concepts.
+## Where to go next
 
-Repository README files were verified on 2026-07-11. Deeper chapters will verify implementation files before making code-level or production-readiness claims.
+- [Evidence guide](Engineering-Evidence-Guide.md) — what counts as implementation proof, and how to avoid overclaiming.
+- [Technology-to-project map](../TECHNOLOGY-PROJECT-MAP.md) — historical technology cross-reference (may require updating).
+- [Command reference](../13-Command-Reference/Chapter-13-Commands.md) — project commands and troubleshooting context.
 
-## Evidence Standard
-
-A strong project case study should link to evidence wherever possible:
-
-- source repository and tagged release;
-- architecture diagram;
-- setup and deployment instructions;
-- API or interface screenshots;
-- infrastructure and pipeline configuration;
-- monitoring dashboard or alert example;
-- test output or quality checks;
-- incident note, trade-off record, or architecture decision record;
-- short demonstration video.
-
-## Adding the Next Project
-
-1. Copy the [project case-study template](../templates/project-case-study-template.md).
-2. Replace every placeholder with verified information from the project.
-3. Add the project to both tables on this page.
-4. Link the case study to relevant handbook chapters.
-5. Record at least one decision and one lesson learned.
-6. Add evidence before describing the case study as complete.
+**Maintainer note:** Older project pages include earlier verification dates; use the source links above for fresh source artifacts and update the individual case study before making a current production claim.

@@ -1,63 +1,56 @@
 ---
 layout: home
-
 hero:
-  name: "Cloud & Platform Engineering"
-  text: "Understand it. Build it. Explain it."
-  tagline: A project-led handbook connecting cloud, Kubernetes, AWS, platform engineering, delivery, observability and AI operations to systems I have actually built.
+  name: "Cloud & Platform Engineering Handbook"
+  text: "Understand it. Build it. Prove it."
+  tagline: "A living field guide to AWS, Azure, Kubernetes, delivery, reliability and AI operations, grounded in source code, tests and deployment artifacts."
   actions:
     - theme: brand
-      text: Start with Cloud Fundamentals
-      link: /01-Cloud-Fundamentals/Chapter-01-Cloud-Computing
-    - theme: alt
-      text: Explore the Projects
+      text: Browse case studies
       link: /projects/
     - theme: alt
-      text: Open the Command Reference
-      link: /13-Command-Reference/Chapter-13-Commands
-
+      text: Start learning
+      link: /01-Cloud-Fundamentals/Chapter-01-Cloud-Computing
+    - theme: alt
+      text: Evidence standards
+      link: /projects/Engineering-Evidence-Guide
 features:
-  - icon: "☁️"
-    title: Learn the foundations
-    details: Begin with cloud, Linux and Docker, then connect them to AWS, Kubernetes and infrastructure as code.
-    link: /01-Cloud-Fundamentals/Chapter-01-Cloud-Computing
-    linkText: Begin learning
   - icon: "🧭"
-    title: Follow real architecture
-    details: Trace requests, events, identities and failure paths through PlatformPilot, Pharmacy, CloudOps, OpsPilot and the serverless projects.
-    link: /11-Architecture/Chapter-11-Architecture
-    linkText: Explore architecture
-  - icon: "🛠️"
-    title: Understand every command
-    details: Use project-verified setup, build, test, deployment and troubleshooting commands with purpose and safety context.
-    link: /13-Command-Reference/Chapter-13-Commands
-    linkText: Browse commands
+    title: Four connected flagship systems
+    details: PlatformPilot, CloudOps, OpsPilot SaaS and PropertyOps illustrate different layers of cloud and platform engineering.
+    link: /projects/
   - icon: "🔐"
-    title: Think beyond the demo
-    details: Examine IAM, RBAC, workload identity, secrets, reliability, cost, observability and production-readiness gaps.
-    link: /05-AWS/Chapter-05-AWS
-    linkText: Study AWS responsibilities
-  - icon: "🚀"
-    title: Connect delivery to operations
-    details: Learn GitHub Actions, ECR, Argo CD, Prometheus and Grafana as one continuous engineering workflow.
-    link: /08-CICD/Chapter-08-CICD
-    linkText: Follow the delivery path
-  - icon: "🎯"
-    title: Prepare for interviews
-    details: Explain projects honestly through definitions, implementation evidence, trade-offs, failures, lessons and next steps.
+    title: Security by design
+    details: Learn IAM, application RBAC, workload identity, private networking and approval boundaries from project artifacts.
+    link: /projects/Engineering-Evidence-Guide
+  - icon: "⚙️"
+    title: Reproducible infrastructure
+    details: AWS Terraform, Azure Bicep, Kubernetes manifests, delivery pipelines and testing practices.
+    link: /07-Terraform/Chapter-07-Terraform
+  - icon: "📈"
+    title: Build systems you can operate
+    details: Follow metrics, traces, SLOs, evidence handling and incident investigation.
+    link: /09-Observability/Chapter-09-Observability
+  - icon: "🤖"
+    title: Grounded AI operations
+    details: Study retrieval, orchestration, RAG evaluations and human-in-the-loop action workflows.
+    link: /projects/RAG-Ops-Assistant
+  - icon: "📚"
+    title: Learn and explain
+    details: Topic chapters, a command reference and engineering interview preparation.
     link: /12-Interview-Preparation/Chapter-12-Interview-Preparation
-    linkText: Practise explanations
 ---
 
-## A handbook built around evidence
+## What changed in this edition
 
-Every technology is connected to a repository, a decision, a command, an architecture flow or a lesson learned. Implemented work, repository documentation and future plans are labelled separately so the handbook remains credible.
+The project index has been refreshed against public repository structures and READMEs inspected on **11 October 2026**, including new Azure, AI and infrastructure projects. Previous chapters remain available as learning resources and may contain older dated observations; always inspect linked source for the current implementation.
 
-### Recommended reading path
+## Choose a learning path
 
-1. Work through Chapters 1–5 to understand the cloud-native foundation.
-2. Continue through Chapters 6–10 to understand platforms, delivery, observability and AI-assisted operations.
-3. Use the architecture and interview chapters to practise explaining the systems.
-4. Open a project case study whenever you want to see where a concept appears in real code.
+**Platform engineer:** [PlatformPilot](/projects/PlatformPilot) → [CloudOps Command Center](/projects/CloudOps-Command-Center) → [Backstage](/projects/Backstage-Developer-Portal) → [Observability](/projects/Observability-Platform).
 
-> The goal is not to memorise service names. It is to explain what each component does, why it exists, how it fails and what I would improve.
+**Cloud engineer:** [Terraform EKS](/projects/Terraform-AWS-EKS-Platform) → [Pharmacy EKS](/projects/Pharmacy-API-EKS) → [PropertyOps on Azure](/projects/PropertyOps-Azure) → [AZ-104 Lab](/projects/AZ104-Azure-Infrastructure).
+
+**AI operations engineer:** [RAG Ops Assistant](/projects/RAG-Ops-Assistant) → [CloudOps](/projects/CloudOps-Command-Center) → [OpsPilot SaaS](/projects/OpsPilot-SaaS).
+
+> **Evidence convention:** repository contents demonstrate implemented artifacts, screenshots document specific runs, and live uptime, customer usage, security certification or ongoing cloud deployment are *not* assumed.
