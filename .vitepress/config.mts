@@ -31,6 +31,10 @@ const projects = [
   { text: "Backstage Portal", link: "/projects/Backstage-Developer-Portal" },
   { text: "AI Content Automation", link: "/projects/AI-Content-Automation-Platform" },
   { text: "AI Resume Analyzer", link: "/projects/AI-Resume-Analyzer" },
+  { text: "PropertyOps on Azure", link: "/projects/PropertyOps-Azure" },
+  { text: "AZ-104 Azure Infrastructure", link: "/projects/AZ104-Azure-Infrastructure" },
+  { text: "RAG Ops Assistant", link: "/projects/RAG-Ops-Assistant" },
+  { text: "Engineering Evidence Guide", link: "/projects/Engineering-Evidence-Guide" },
   { text: "Cloud Control Plane Vision", link: "/projects/Cloud-Control-Plane" },
 ];
 
@@ -73,6 +77,7 @@ export default defineConfig({
         text: "Start Here",
         items: [
           { text: "Handbook Home", link: "/" },
+          { text: "Platform Evolution Roadmap", link: "/WEEKEND-PLATFORM-EVOLUTION-ROADMAP" },
           { text: "How to Use the Handbook", link: "/README" },
           { text: "Deploy on Vercel", link: "/DEPLOYMENT" },
           { text: "Debugging and Issue Register", link: "/DEBUGGING-ISSUE-REGISTER" },
