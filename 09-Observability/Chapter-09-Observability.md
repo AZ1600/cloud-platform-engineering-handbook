@@ -15,7 +15,7 @@ A dashboard is not an observability strategy by itself.
 
 ## 2. My Evidence
 
-- Observability project: Prometheus and Grafana in Docker Compose.
+- Observability project: a local Docker Compose stack with Prometheus, Grafana, OpenTelemetry Collector, Loki, Tempo, Alertmanager, application instrumentation, SLI/SLO rules and promtool tests.
 - PlatformPilot: Kubernetes resources, events, logs, health scores and Prometheus integration documented in the current README.
 - Pharmacy API: Kubernetes probes and CloudWatch evidence.
 - OpsPilot: runtime health diagnostics.
@@ -71,9 +71,9 @@ PlatformPilot combines status, events and logs, which is stronger than diagnosin
 
 ## 8. Traces
 
-Distributed tracing follows a request across services using trace and span identifiers. My current dedicated observability project does not document tracing, so this is a future capability rather than a completed claim.
+Distributed tracing follows request work through spans, parent-child relationships and trace IDs. The current dedicated observability project instruments a demo FastAPI app with OpenTelemetry, exports spans through an OpenTelemetry Collector to Tempo, and links structured Loki logs to traces by trace ID. This is demonstrated locally; it is not proof of tracing across all portfolio services or a production tracing deployment.
 
-Tracing would be most useful when a request crosses API Gateway/Lambda integrations or several SaaS/API layers.
+Tracing across a multi-service SaaS/API chain would extend the existing local demonstration.
 
 ## 9. Health Checks
 
@@ -146,7 +146,7 @@ docker compose logs -f prometheus
 docker compose logs -f grafana
 ```
 
-The current Compose file does not configure persistent Grafana storage. Recreating the container can therefore lose interactive configuration unless provisioning or volumes are added.
+The current Compose file mounts a named Grafana volume and provisions dashboards and data sources. The lab also includes an Alertmanager secret mount. Check current Compose volume and secret definitions before cleaning up; deleting volumes can still remove persisted local state.
 
 ## 16. Investigation Method
 
@@ -160,7 +160,7 @@ Do not restart first and investigate later unless immediate mitigation outweighs
 
 ## 17. Interview Explanation
 
-> I built a Prometheus and Grafana Compose stack and used Kubernetes events/logs in PlatformPilot. I understand that metrics show trends, logs explain discrete events, traces follow distributed requests and audit records prove actions. My next step is to instrument a real application, provision dashboards/alerts as code, persist data and define service-level indicators tied to user workflows.
+> I built a local Compose observability lab with instrumented FastAPI, Prometheus, Grafana, OpenTelemetry Collector, Loki, Tempo and Alertmanager. It includes SLO/error-budget rules, alert tests, dashboard provisioning and a telemetry smoke test. PlatformPilot separately exposes Kubernetes and Prometheus diagnostics, and CloudOps implements traceable approval decisions. My next challenge is an independently verified multi-service integration and longer-window, user-centered SLOs.
 
 ## 18. Mastery Checklist
 
@@ -178,3 +178,8 @@ Do not restart first and investigate later unless immediate mitigation outweighs
 - [Observability Project](../projects/Observability-Platform.md)
 - [PlatformPilot](../projects/PlatformPilot.md)
 - [Command Reference](../13-Command-Reference/Chapter-13-Commands.md)
+
+<!-- phase5-observability-sre -->
+## 19. Advanced Observability and SRE Field Guide
+
+The [Phase 5 SRE labs](../sre-labs/index.md) contain detailed reviews of the existing Prometheus recording rules, alert tests, OTLP-to-Tempo tracing, structured logs to Loki, Grafana investigations, error-budget math, PlatformPilot error boundaries, CloudOps approval traces and an evidence-led incident capstone. These exercises extend this conceptual chapter without implying always-on production deployment.

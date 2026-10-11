@@ -65,3 +65,8 @@ Continue with the [AWS/Azure hands-on labs](cloud-labs/index.md), covering VPC-t
 ## CI/CD, GitOps and DevSecOps — practical delivery field guide
 
 The [Phase 4 delivery labs](delivery-labs/index.md) connect real GitHub Actions, ECR publication, OIDC, container hardening, SBOM and attestation evidence, Argo CD reconciliation, Terraform CI and EKS release verification. The labs distinguish implemented workflows from proposed integrations, and avoid cloud writes by default.
+
+<!-- phase5-observability-sre -->
+## Observability, SRE and incident response — Phase 5 field guide
+
+The [Phase 5 SRE labs](sre-labs/index.md) expand Chapter 9 with source-backed telemetry architecture, RED metrics, PromQL, traces/log correlation, Grafana, SLOs and burn-rate alerts, rule tests, incident response, PlatformPilot and CloudOps diagnostic boundaries, and a capstone postmortem. The material distinguishes source review from live deployment validation.
