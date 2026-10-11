@@ -67,38 +67,54 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
-      { text: "Learn", items: chapters.slice(0, 10) },
-      { text: "Labs", link: "/labs/" },
-      { text: "Delivery", link: "/delivery-labs/" },
-      { text: "AI & RAG", link: "/ai-labs/" },
-      { text: "Architecture", link: "/architecture-labs/" },
+      {
+        text: "Learn",
+        items: [
+          { text: "Foundations", items: chapters.slice(0, 4) },
+          { text: "Cloud & Platform", items: chapters.slice(4, 10) },
+          { text: "Design & Reference", items: chapters.slice(10, 14) },
+        ],
+      },
+      {
+        text: "Labs",
+        items: [
+          { text: "Kubernetes & Platform", link: "/labs/" },
+          { text: "AWS & Azure", link: "/cloud-labs/" },
+          { text: "CI/CD & DevSecOps", link: "/delivery-labs/" },
+          { text: "Observability & SRE", link: "/sre-labs/" },
+          { text: "AI & RAG", link: "/ai-labs/" },
+          { text: "Architecture & Design", link: "/architecture-labs/" },
+        ],
+      },
       { text: "Projects", link: "/projects/" },
-      { text: "Commands", link: "/13-Command-Reference/Chapter-13-Commands" },
-      { text: "Practice", link: "/interview-labs/" },
-      { text: "Interview", link: "/12-Interview-Preparation/Chapter-12-Interview-Preparation" },
+      {
+        text: "Practice",
+        items: [
+          { text: "Interview Field Guide", link: "/interview-labs/" },
+          { text: "Interview Preparation", link: "/12-Interview-Preparation/Chapter-12-Interview-Preparation" },
+          { text: "Command Reference", link: "/13-Command-Reference/Chapter-13-Commands" },
+          { text: "Evidence Standards", link: "/projects/Engineering-Evidence-Guide" },
+        ],
+      },
     ],
     sidebar: [
       {
         text: "Start Here",
         items: [
           { text: "Handbook Home", link: "/" },
-          { text: "Platform Evolution Roadmap", link: "/WEEKEND-PLATFORM-EVOLUTION-ROADMAP" },
           { text: "How to Use the Handbook", link: "/README" },
-          { text: "Quality & Security Review", link: "/quality/" },
-          { text: "Deploy on Vercel", link: "/DEPLOYMENT" },
-          { text: "Debugging and Issue Register", link: "/DEBUGGING-ISSUE-REGISTER" },
-          { text: "Technology-to-Project Map", link: "/TECHNOLOGY-PROJECT-MAP" },
-          { text: "Project and Work Register", link: "/PROJECT-WORK-REGISTER" },
+          { text: "Project Index", link: "/projects/" },
+          { text: "Evidence Standards", link: "/projects/Engineering-Evidence-Guide" },
         ],
       },
       {
         text: "Learning Chapters",
-        collapsed: false,
+        collapsed: true,
         items: chapters,
       },
       {
         text: "Kubernetes & Platform Deep Dives",
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: "Start here", link: "/labs/" },
           { text: "01. Control loops & workloads", link: "/labs/01-kubernetes-control-loops" },
@@ -113,7 +129,7 @@ export default defineConfig({
       },
       {
         text: "Cloud Infrastructure Deep Dives",
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: "Start: AWS & Azure", link: "/cloud-labs/" },
           { text: "01. AWS VPC to EKS", link: "/cloud-labs/01-aws-vpc-eks-path" },
@@ -213,6 +229,19 @@ export default defineConfig({
           { text: "09. STAR stories", link: "/interview-labs/09-star-stories" },
           { text: "10. Portfolio evidence audit", link: "/interview-labs/10-evidence-portfolio-audit" },
           { text: "11. Mock interview & rubric", link: "/interview-labs/11-mock-interview-loop" },
+        ],
+      },
+      {
+        text: "Reference & Operations",
+        collapsed: true,
+        items: [
+          { text: "Platform Evolution Roadmap", link: "/WEEKEND-PLATFORM-EVOLUTION-ROADMAP" },
+          { text: "Quality & Security Review", link: "/quality/" },
+          { text: "Deploy on Vercel", link: "/DEPLOYMENT" },
+          { text: "Debugging and Issue Register", link: "/DEBUGGING-ISSUE-REGISTER" },
+          { text: "Technology-to-Project Map", link: "/TECHNOLOGY-PROJECT-MAP" },
+          { text: "Project and Work Register", link: "/PROJECT-WORK-REGISTER" },
+          { text: "Handbook Edition Notes", link: "/HANDBOOK-RELEASE-NOTES" },
         ],
       },
       {
