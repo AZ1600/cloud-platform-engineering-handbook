@@ -54,3 +54,8 @@ The project index has been refreshed against public repository structures and RE
 **AI operations engineer:** [RAG Ops Assistant](/projects/RAG-Ops-Assistant) → [CloudOps](/projects/CloudOps-Command-Center) → [OpsPilot SaaS](/projects/OpsPilot-SaaS).
 
 > **Evidence convention:** repository contents demonstrate implemented artifacts, screenshots document specific runs, and live uptime, customer usage, security certification or ongoing cloud deployment are *not* assumed.
+
+<!-- phase2-kubernetes-platform-start -->
+## Hands-on Kubernetes & Platform Engineering
+
+Follow the new [Kubernetes and Platform Engineering field guide](/labs/) to investigate workloads, inspect access boundaries and understand how PlatformPilot, Backstage and CloudOps fit together. Includes source-linked security reviews, incident runbooks and a capstone scenario. The existing learning chapters remain available.

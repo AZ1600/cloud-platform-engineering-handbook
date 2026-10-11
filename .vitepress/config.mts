@@ -68,6 +68,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Learn", items: chapters.slice(0, 10) },
+      { text: "Labs", link: "/labs/" },
       { text: "Projects", link: "/projects/" },
       { text: "Commands", link: "/13-Command-Reference/Chapter-13-Commands" },
       { text: "Interview", link: "/12-Interview-Preparation/Chapter-12-Interview-Preparation" },
@@ -89,6 +90,21 @@ export default defineConfig({
         text: "Learning Chapters",
         collapsed: false,
         items: chapters,
+      },
+      {
+        text: "Kubernetes & Platform Deep Dives",
+        collapsed: false,
+        items: [
+          { text: "Start here", link: "/labs/" },
+          { text: "01. Control loops & workloads", link: "/labs/01-kubernetes-control-loops" },
+          { text: "02. Networking & identity", link: "/labs/02-networking-and-identity" },
+          { text: "03. Incident runbooks", link: "/labs/03-incident-runbooks" },
+          { text: "04. PlatformPilot API", link: "/labs/04-platformpilot-api" },
+          { text: "05. Backstage golden paths", link: "/labs/05-backstage-golden-paths" },
+          { text: "06. CloudOps approvals", link: "/labs/06-cloudops-approval" },
+          { text: "07. Connected scenario", link: "/labs/07-integrated-scenario" },
+          { text: "08. Exercises & review", link: "/labs/08-review-exercises" },
+        ],
       },
       {
         text: "Project Case Studies",

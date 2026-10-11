@@ -636,3 +636,8 @@ Design the transition from the mounted `aws-credentials` Secret to an EKS worklo
 - [Terraform AWS EKS Platform](../projects/Terraform-AWS-EKS-Platform.md)
 - [Docker Fundamentals](../03-Docker/Chapter-03-Docker.md)
 - [Technology-to-Project Evidence Map](../TECHNOLOGY-PROJECT-MAP.md)
+
+<!-- phase2-kubernetes-platform-start -->
+## Phase 2 — Hands-on investigation and exercises
+
+Continue with the [Kubernetes & Platform Engineering lab series](/labs/). Begin with [control loops and workload readiness](/labs/01-kubernetes-control-loops), then practise [networking and access boundaries](/labs/02-networking-and-identity) and [incident runbooks](/labs/03-incident-runbooks). These pages extend rather than replace the chapter above.
