@@ -4,7 +4,7 @@
 
 ## 1. What AI Operations Means Here
 
-My projects use three approaches:
+The projects illustrate several distinct approaches:
 
 - deterministic rules in PlatformPilot;
 - infrastructure risk classification and approval workflows in CloudOps;
@@ -164,3 +164,8 @@ The executor should accept a limited typed action, not arbitrary shell text.
 - [CloudOps](../projects/CloudOps-Command-Center.md)
 - [OpsPilot](../projects/OpsPilot-SaaS.md)
 - [AI Resume Analyzer](../projects/AI-Resume-Analyzer.md)
+
+<!-- phase6-ai-ops-rag -->
+## Phase 6 — AI and RAG engineering in depth
+
+For source-backed retrieval architecture, hybrid search, reranking, LangGraph/MCP, Bedrock task identity, grounding, security, evaluation and safe operational automation, use the [AI Operations & RAG field guide](../ai-labs/index.md). Its offline fixture is illustrative and is not a live model evaluation.

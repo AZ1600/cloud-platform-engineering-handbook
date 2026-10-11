@@ -70,3 +70,8 @@ The [Phase 4 delivery labs](delivery-labs/index.md) connect real GitHub Actions,
 ## Observability, SRE and incident response — Phase 5 field guide
 
 The [Phase 5 SRE labs](sre-labs/index.md) expand Chapter 9 with source-backed telemetry architecture, RED metrics, PromQL, traces/log correlation, Grafana, SLOs and burn-rate alerts, rule tests, incident response, PlatformPilot and CloudOps diagnostic boundaries, and a capstone postmortem. The material distinguishes source review from live deployment validation.
+
+<!-- phase6-ai-ops-rag -->
+## AI Operations and RAG Engineering — Phase 6 field guide
+
+The [Phase 6 AI/RAG labs](ai-labs/index.md) connect RAG Ops Assistant, Bedrock, LangGraph, MCP, PlatformPilot, CloudOps, OpsPilot and résumé-scoring projects. They separate implemented source behavior, mocked API tests, synthetic evaluation fixtures and production-hardening proposals.

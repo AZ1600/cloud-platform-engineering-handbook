@@ -1,0 +1,48 @@
+[
+  {
+    "question": "How does CloudOps prevent unsafe remediation?",
+    "expect_evidence": true,
+    "expected_sources": [
+      "cloudops-command-center.md"
+    ],
+    "returned_sources": [
+      "cloudops-command-center.md"
+    ]
+  },
+  {
+    "question": "How does Private DNS help VM reach Blob Storage?",
+    "expect_evidence": true,
+    "expected_sources": [
+      "az104-infrastructure-lab.md"
+    ],
+    "returned_sources": [
+      "az104-infrastructure-lab.md"
+    ]
+  },
+  {
+    "question": "How does the observability platform detect outages?",
+    "expect_evidence": true,
+    "expected_sources": [
+      "platform-engineering-observability.md"
+    ],
+    "returned_sources": [
+      "platform-engineering-observability.md"
+    ]
+  },
+  {
+    "question": "How does PlatformPilot detect operational issues?",
+    "expect_evidence": true,
+    "expected_sources": [
+      "platform-pilot.md"
+    ],
+    "returned_sources": [
+      "platform-pilot.md"
+    ]
+  },
+  {
+    "question": "What is the company's annual leave policy?",
+    "expect_evidence": false,
+    "expected_sources": [],
+    "returned_sources": []
+  }
+]
