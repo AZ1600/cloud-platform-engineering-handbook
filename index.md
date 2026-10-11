@@ -74,3 +74,8 @@ Explore the [Phase 4 delivery field guide](/delivery-labs/) for source-linked se
 ## New: Observability, SRE and incident response deep dives
 
 Follow the [Phase 5 SRE field guide](/sre-labs/) for source-linked Prometheus queries, OpenTelemetry traces, Loki logs, Tempo investigation, error budgets, alert testing, PlatformPilot failure boundaries and approval-gated CloudOps incident workflows. Local demos are not represented as production availability evidence.
+
+<!-- phase6-ai-ops-rag -->
+## New: AI Operations and RAG Engineering deep dives
+
+Explore the [Phase 6 AI/RAG field guide](/ai-labs/) for evidence-grounded retrieval, source citations, LangGraph/MCP routing, Bedrock identity, evaluation, prompt-injection boundaries and approval-safe automation.
